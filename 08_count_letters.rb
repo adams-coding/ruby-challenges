@@ -12,6 +12,22 @@
 
 def count_letters (string)
   result = {} # You'll need an empty hash to get started!
-
-  return result # return the hash
+  word_split = string.split("")
+  
+  word_split.each do |unstrung_string|
+    word_split.count(unstrung_string)
+  result[unstrung_string] = word_split.count(unstrung_string)
 end
+
+  p word_split
+  p result
+  return result # return the hash
+  
+  
+end
+
+count_letters("discombobulation")
+
+
+
+
